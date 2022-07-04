@@ -10,10 +10,12 @@
 		743BBCB02873685A0028B015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BBCAF2873685A0028B015 /* AppDelegate.swift */; };
 		743BBCB22873685A0028B015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BBCB12873685A0028B015 /* SceneDelegate.swift */; };
 		743BBCB42873685A0028B015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BBCB32873685A0028B015 /* ViewController.swift */; };
-		743BBCB72873685A0028B015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743BBCB52873685A0028B015 /* Main.storyboard */; };
 		743BBCBA2873685A0028B015 /* Wordle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 743BBCB82873685A0028B015 /* Wordle.xcdatamodeld */; };
 		743BBCBC2873685D0028B015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743BBCBB2873685D0028B015 /* Assets.xcassets */; };
 		743BBCBF2873685D0028B015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743BBCBD2873685D0028B015 /* LaunchScreen.storyboard */; };
+		743BBCC728736DF20028B015 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BBCC628736DF10028B015 /* KeyboardViewController.swift */; };
+		743BBCC928736E1B0028B015 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BBCC828736E1B0028B015 /* BoardViewController.swift */; };
+		743BBCCB28737AD90028B015 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BBCCA28737AD90028B015 /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		743BBCAF2873685A0028B015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		743BBCB12873685A0028B015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		743BBCB32873685A0028B015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		743BBCB62873685A0028B015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		743BBCB92873685A0028B015 /* Wordle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wordle.xcdatamodel; sourceTree = "<group>"; };
 		743BBCBB2873685D0028B015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		743BBCBE2873685D0028B015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		743BBCC02873685D0028B015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743BBCC628736DF10028B015 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		743BBCC828736E1B0028B015 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		743BBCCA28737AD90028B015 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,13 @@
 				743BBCAF2873685A0028B015 /* AppDelegate.swift */,
 				743BBCB12873685A0028B015 /* SceneDelegate.swift */,
 				743BBCB32873685A0028B015 /* ViewController.swift */,
-				743BBCB52873685A0028B015 /* Main.storyboard */,
 				743BBCBB2873685D0028B015 /* Assets.xcassets */,
 				743BBCBD2873685D0028B015 /* LaunchScreen.storyboard */,
 				743BBCC02873685D0028B015 /* Info.plist */,
 				743BBCB82873685A0028B015 /* Wordle.xcdatamodeld */,
+				743BBCC628736DF10028B015 /* KeyboardViewController.swift */,
+				743BBCC828736E1B0028B015 /* BoardViewController.swift */,
+				743BBCCA28737AD90028B015 /* KeyCell.swift */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
@@ -130,7 +136,6 @@
 			files = (
 				743BBCBF2873685D0028B015 /* LaunchScreen.storyboard in Resources */,
 				743BBCBC2873685D0028B015 /* Assets.xcassets in Resources */,
-				743BBCB72873685A0028B015 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +147,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				743BBCBA2873685A0028B015 /* Wordle.xcdatamodeld in Sources */,
+				743BBCCB28737AD90028B015 /* KeyCell.swift in Sources */,
+				743BBCC728736DF20028B015 /* KeyboardViewController.swift in Sources */,
 				743BBCB42873685A0028B015 /* ViewController.swift in Sources */,
 				743BBCB02873685A0028B015 /* AppDelegate.swift in Sources */,
 				743BBCB22873685A0028B015 /* SceneDelegate.swift in Sources */,
+				743BBCC928736E1B0028B015 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		743BBCB52873685A0028B015 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				743BBCB62873685A0028B015 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		743BBCBD2873685D0028B015 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -296,9 +296,9 @@
 				INFOPLIST_FILE = Wordle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,9 +324,9 @@
 				INFOPLIST_FILE = Wordle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
